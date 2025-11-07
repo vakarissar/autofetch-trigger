@@ -1,0 +1,12 @@
+{
+  "name": "autofetch-trigger",
+  "version": "1.0.0",
+  "main": "autofetch-cron.js",
+  "type": "module",
+  "scripts": {
+    "start": "node autofetch-cron.js"
+  },
+  "dependencies": {
+    "puppeteer": "^23.3.0"
+  }
+}
