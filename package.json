@@ -1,10 +1,10 @@
-{
+{{
   "name": "autofetch-trigger",
   "version": "1.0.0",
-  "main": "autofetch-cron.js",
   "type": "module",
+  "main": "autofetch-cron.js",
   "scripts": {
-    "start": "node autofetch-cron.js",
+    "start": "node server.js",
     "postinstall": "npx puppeteer install chrome"
   },
   "dependencies": {
