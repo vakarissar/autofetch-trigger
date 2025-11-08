@@ -1,4 +1,4 @@
-import puppeteer from "puppeteer";
+const puppeteer = require('puppeteer');
 
 const AUTO_FETCH_URL = "https://match-stats-tracker-44e3b4f9.base44.app/AutoFetch";
 
