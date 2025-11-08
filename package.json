@@ -4,7 +4,8 @@
   "main": "autofetch-cron.js",
   "type": "module",
   "scripts": {
-    "start": "node autofetch-cron.js"
+    "start": "node autofetch-cron.js",
+    "postinstall": "npx puppeteer install chrome"
   },
   "dependencies": {
     "express": "^5.1.0",
