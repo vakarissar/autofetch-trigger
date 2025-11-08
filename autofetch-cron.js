@@ -1,4 +1,11 @@
-const puppeteer = require('puppeteer');
+import puppeteer from 'puppeteer';
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+// ES module __dirname/__filename workaround
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const AUTO_FETCH_URL = "https://match-stats-tracker-44e3b4f9.base44.app/AutoFetch";
 
