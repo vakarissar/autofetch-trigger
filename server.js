@@ -4,16 +4,6 @@ import { exec } from 'child_process';
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// Install Chromium once when the server starts
-exec('npx puppeteer install chrome', (err, stdout, stderr) => {
-  if (err) {
-    console.error('❌ Chromium installation failed:', err);
-  } else {
-    console.log('✅ Chromium installed successfully');
-    console.log(stdout);
-  }
-});
-
 // Endpoint to trigger AutoFetch
 app.get('/run', async (req, res) => {
   res.send('✅ AutoFetch started! Check logs for progress.');
